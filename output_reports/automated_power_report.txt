@@ -1,0 +1,98 @@
+
+============================================================
+                AUTOMATED POWER ANALYSIS REPORT
+============================================================
+
+Project Name:
+Power Consumption Analyzer using Python and LTspice Output Files
+
+Objective:
+To analyze power consumption behavior of a simulated electronic circuit
+using LTspice output data and Python-based visualization.
+
+------------------------------------------------------------
+1. POWER VS FREQUENCY ANALYSIS
+------------------------------------------------------------
+
+Minimum Total Power:
+2.0032 mW at 1000.00 Hz
+
+Maximum Total Power:
+34.4000 mW at 10000000.00 Hz
+
+Average Total Power:
+7.9998 mW
+
+Observation:
+As operating frequency increases, dynamic power also increases.
+This is because dynamic power is directly proportional to switching
+activity and frequency.
+
+Formula:
+Dynamic Power = α × C × V² × f
+
+Where:
+α = switching activity factor
+C = load capacitance
+V = supply voltage
+f = operating frequency
+
+------------------------------------------------------------
+2. STATIC VS DYNAMIC POWER BREAKDOWN
+------------------------------------------------------------
+
+Average Static Power:
+2.0000 mW
+
+Average Dynamic Power:
+5.9998 mW
+
+Static Power Percentage:
+25.00 %
+
+Dynamic Power Percentage:
+75.00 %
+
+Observation:
+Static power mainly comes from leakage current, while dynamic power
+comes from charging and discharging of capacitances during switching.
+
+------------------------------------------------------------
+3. TEMPERATURE EFFECT ON POWER
+------------------------------------------------------------
+
+Minimum Power with Temperature:
+3.6656 mW at -40.00 °C
+
+Maximum Power with Temperature:
+8.2355 mW at 125.00 °C
+
+Observation:
+Power consumption increases with temperature mainly because leakage
+current increases at higher temperatures. This is an important factor
+in VLSI circuit design and low-power semiconductor systems.
+
+------------------------------------------------------------
+4. ENGINEERING INSIGHTS
+------------------------------------------------------------
+
+1. Dynamic power dominates at high operating frequencies.
+2. Static power becomes significant at higher temperatures.
+3. Low-power design requires reducing voltage, capacitance, switching
+   activity, and leakage current.
+4. The circuit should be tested across frequency and temperature corners.
+5. This type of analysis is useful in VLSI, CMOS design, embedded systems,
+   and semiconductor power optimization.
+
+------------------------------------------------------------
+5. GENERATED OUTPUT FILES
+------------------------------------------------------------
+
+1. power_vs_frequency.png
+2. power_breakdown_pie.png
+3. temperature_effect.png
+4. automated_power_report.txt
+
+============================================================
+End of Report
+============================================================
